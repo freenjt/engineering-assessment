@@ -20,7 +20,15 @@
         "drupal/core-recommended": "^10",
         "pantheon-systems/drupal-integrations": "^10",
         "cweagans/composer-patches": "^1.7",
-        "drush/drush": "^11 || ^12"
+        "drush/drush": "^11 || ^12",
+        "drupal/admin_toolbar": "^3.4",
+        "drupal/bootstrap_barrio": "^5.5",
+        "drupal/core-project-message": "^10.3",
+        "drupal/feeds": "^3.0@beta",
+        "drupal/migrate_plus": "^6.0",
+        "drupal/migrate_source_csv": "^3.6",
+        "drupal/migrate_tools": "^6.0",
+        "drupal/pathauto": "^1.12"
     },
     "require-dev": {
         "drupal/core-dev": "^10"
@@ -78,7 +86,9 @@
             "cweagans/composer-patches": true,
             "drupal/core-composer-scaffold": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "php-http/discovery": true,
+            "drupal/core-project-message": true
         }
     }
 }
