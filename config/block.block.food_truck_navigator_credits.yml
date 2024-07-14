@@ -1,0 +1,25 @@
+uuid: e6da6ec1-0db9-4d94-9fd8-54dd8005a51e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e576b705-c83a-4d2f-9ab3-8e732d095946'
+  module:
+    - block_content
+  theme:
+    - food_truck_navigator
+id: food_truck_navigator_credits
+theme: food_truck_navigator
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:e576b705-c83a-4d2f-9ab3-8e732d095946'
+settings:
+  id: 'block_content:e576b705-c83a-4d2f-9ab3-8e732d095946'
+  label: Credits
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

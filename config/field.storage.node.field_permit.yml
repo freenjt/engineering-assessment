@@ -1,0 +1,21 @@
+uuid: fae459c2-4357-4422-9aa4-a8ea9da6f2f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_permit
+field_name: field_permit
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

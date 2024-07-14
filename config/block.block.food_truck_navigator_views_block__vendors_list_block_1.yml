@@ -1,0 +1,29 @@
+uuid: ca0f75f2-8f80-44d7-bdeb-326c69fe6ab4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.vendors_list
+  module:
+    - system
+    - views
+  theme:
+    - food_truck_navigator
+id: food_truck_navigator_views_block__vendors_list_block_1
+theme: food_truck_navigator
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:vendors_list-block_1'
+settings:
+  id: 'views_block:vendors_list-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /home

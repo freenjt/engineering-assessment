@@ -1,0 +1,22 @@
+uuid: df166ef1-7c51-42dc-beb3-a99f05998d20
+langcode: en
+status: true
+dependencies:
+  theme:
+    - food_truck_navigator
+_core:
+  default_config_hash: nPK7ipWj-CFmtuABj0NGJqRVeA6hz2yTJ0_GMd2ZjVg
+id: food_truck_navigator_secondary_local_tasks
+theme: food_truck_navigator
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

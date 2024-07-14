@@ -1,0 +1,25 @@
+uuid: b2b78c97-343e-40d3-8ab6-a74f66033eba
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - food_truck_navigator
+_core:
+  default_config_hash: iyx2hVid4oa89Bq9cNZ8sr6aknyQ97TX2IRUgz-YOm0
+id: food_truck_navigator_site_branding
+theme: food_truck_navigator
+region: header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

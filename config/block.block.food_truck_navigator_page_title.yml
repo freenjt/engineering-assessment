@@ -1,0 +1,26 @@
+uuid: ae3c029f-22f7-48ef-be7c-c7cc0ce7c725
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - food_truck_navigator
+_core:
+  default_config_hash: A1nXmethVeV9FbTlNizc3-oqiYZC99rqbLo-i6E2bTM
+id: food_truck_navigator_page_title
+theme: food_truck_navigator
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /home

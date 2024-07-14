@@ -1,0 +1,20 @@
+uuid: a363ad0b-54df-4a0a-bb7e-456360912ff5
+langcode: en
+status: true
+dependencies:
+  theme:
+    - food_truck_navigator
+_core:
+  default_config_hash: tqWx6t4nQFdQs1wJdmOB2XGoNUtfhu2JcAKjcUa77ok
+id: food_truck_navigator_primary_admin_actions
+theme: food_truck_navigator
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

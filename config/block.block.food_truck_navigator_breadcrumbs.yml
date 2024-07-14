@@ -1,0 +1,22 @@
+uuid: d85ebf14-dd48-4b10-89cb-1c431ade578f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - food_truck_navigator
+_core:
+  default_config_hash: 8IEQkkEzOh8VcrF0z7pJQvy0Ijb3OJNGtdCZqaY6X1U
+id: food_truck_navigator_breadcrumbs
+theme: food_truck_navigator
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

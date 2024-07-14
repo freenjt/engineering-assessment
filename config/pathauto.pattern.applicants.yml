@@ -1,0 +1,22 @@
+uuid: 4d6cc522-49fa-4de2-9e9b-6721d8dc2243
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: applicants
+label: Applicants
+type: 'canonical_entities:node'
+pattern: '/applicant/[node:title]'
+selection_criteria:
+  353ca0dd-ec4d-4de4-b741-37ad1d17734a:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 353ca0dd-ec4d-4de4-b741-37ad1d17734a
+    context_mapping:
+      node: node
+    bundles:
+      vendor: vendor
+selection_logic: and
+weight: -5
+relationships: {  }

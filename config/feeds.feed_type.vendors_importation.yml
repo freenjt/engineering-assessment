@@ -1,0 +1,132 @@
+uuid: b5ffb4a8-df4e-4e1f-a03c-2fdbe3d0abfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.vendor.title
+    - field.field.node.vendor.field_address
+    - field.field.node.vendor.field_cnn
+    - field.field.node.vendor.field_facility_type
+    - field.field.node.vendor.field_location_description
+    - field.field.node.vendor.field_permit
+    - field.field.node.vendor.field_status
+    - node.type.vendor
+  module:
+    - node
+label: 'Vendors importation'
+id: vendors_importation
+description: ''
+help: ''
+import_period: 3600
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: vendor
+  langcode: en
+  insert_new: 1
+  update_existing: 0
+  update_non_existent: _keep
+  skip_hash_check: false
+  skip_validation: false
+  skip_validation_types: {  }
+  authorize: true
+  revision: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  applicant:
+    value: Applicant
+    label: Applicant
+    machine_name: applicant
+    type: csv
+  facilitytype:
+    value: FacilityType
+    label: FacilityType
+    machine_name: facilitytype
+    type: csv
+  cnn:
+    value: cnn
+    label: cnn
+    machine_name: cnn
+    type: csv
+  locationdescription:
+    value: LocationDescription
+    label: LocationDescription
+    machine_name: locationdescription
+    type: csv
+  address:
+    value: Address
+    label: Address
+    machine_name: address
+    type: csv
+  permit:
+    value: permit
+    label: permit
+    machine_name: permit
+    type: csv
+  status:
+    value: Status
+    label: Status
+    machine_name: status
+    type: csv
+mappings:
+  -
+    target: title
+    map:
+      value: applicant
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_facility_type
+    map:
+      target_id: facilitytype
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: 0
+      autocreate_bundle: facility_type
+  -
+    target: field_cnn
+    map:
+      value: cnn
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_location_description
+    map:
+      value: locationdescription
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_address
+    map:
+      value: address
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_permit
+    map:
+      value: permit
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_status
+    map:
+      value: status
+    settings:
+      language: null

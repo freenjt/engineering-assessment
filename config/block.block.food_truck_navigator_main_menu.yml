@@ -1,0 +1,27 @@
+uuid: be5fce8b-8081-4584-bbdc-472d17f22db1
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - food_truck_navigator
+_core:
+  default_config_hash: ksLRq724SzaocfEKu0njU0RDwLD5b5e79-WYtQPRqyY
+id: food_truck_navigator_main_menu
+theme: food_truck_navigator
+region: primary_menu
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

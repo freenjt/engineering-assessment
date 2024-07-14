@@ -1,0 +1,17 @@
+uuid: 71e0082d-8a36-4493-9119-f17458970618
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Vendor
+type: vendor
+description: 'Food Vendor'
+help: null
+new_revision: false
+preview_mode: 2
+display_submitted: false

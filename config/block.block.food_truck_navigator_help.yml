@@ -1,0 +1,22 @@
+uuid: 10eab405-a34e-480e-9d4a-643f79e8dc17
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - food_truck_navigator
+_core:
+  default_config_hash: QFW9nkIap--hhRJdDFhN9DUVFzMOARjjQ2pKrJKXYXc
+id: food_truck_navigator_help
+theme: food_truck_navigator
+region: highlighted
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

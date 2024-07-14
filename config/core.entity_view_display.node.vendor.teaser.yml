@@ -1,0 +1,41 @@
+uuid: 2ad2d22a-0c0e-4d0d-aea1-0d46631ea1a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.vendor.feeds_item
+    - field.field.node.vendor.field_address
+    - field.field.node.vendor.field_cnn
+    - field.field.node.vendor.field_facility_type
+    - field.field.node.vendor.field_location_description
+    - field.field.node.vendor.field_permit
+    - field.field.node.vendor.field_status
+    - node.type.vendor
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.vendor.teaser
+targetEntityType: node
+bundle: vendor
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  field_address: true
+  field_cnn: true
+  field_facility_type: true
+  field_location_description: true
+  field_permit: true
+  field_status: true

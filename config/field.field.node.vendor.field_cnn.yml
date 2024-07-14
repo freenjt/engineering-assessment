@@ -1,0 +1,23 @@
+uuid: 7fbd2752-62cc-497f-a1df-f1a5d1c8639a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cnn
+    - node.type.vendor
+id: node.vendor.field_cnn
+field_name: field_cnn
+entity_type: node
+bundle: vendor
+label: CNN
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

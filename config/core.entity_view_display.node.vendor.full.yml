@@ -1,0 +1,81 @@
+uuid: 1bf4b199-7948-485c-ada8-fb4f8011cb95
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.vendor.feeds_item
+    - field.field.node.vendor.field_address
+    - field.field.node.vendor.field_cnn
+    - field.field.node.vendor.field_facility_type
+    - field.field.node.vendor.field_location_description
+    - field.field.node.vendor.field_permit
+    - field.field.node.vendor.field_status
+    - node.type.vendor
+  module:
+    - field_layout
+    - options
+    - user
+  theme:
+    - bootstrap_barrio
+third_party_settings:
+  field_layout:
+    id: barrio_cardbasic
+    settings:
+      label: ''
+id: node.vendor.full
+targetEntityType: node
+bundle: vendor
+mode: full
+content:
+  field_address:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: first
+  field_cnn:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: first
+  field_facility_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: first
+  field_location_description:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: first
+  field_permit:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: first
+  field_status:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: first
+hidden:
+  feeds_item: true
+  links: true
