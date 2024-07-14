@@ -1,22 +1,35 @@
-# Composer-enabled Drupal template
+# Food Truck Navigator
 
-This is Pantheon's recommended starting point for forking new [Drupal](https://www.drupal.org/) upstreams
-that work with the Platform's Integrated Composer build process. It is also the
-Platform's standard Drupal 9 upstream.
+This project is developed using Drupal. It provides a platform for managing and displaying information about mobile food facility permits. The key features of this project include a custom content type called "Vendor," a taxonomy term for defining facility types, and a view that filters and displays vendor information in a user-friendly manner.
 
-Unlike with earlier Pantheon upstreams, files such as Drupal Core that you are
-unlikely to adjust while building sites are not in the main branch of the 
-repository. Instead, they are referenced as dependencies that are installed by
-Composer.
+## Features
 
-For more information and detailed installation guides, please visit the
-Integrated Composer Pantheon documentation: https://pantheon.io/docs/integrated-composer
+### Content Type: Vendor
+The Vendor content type contains all the information of the applicants. This includes:
+- Vendor Name
+- Address
+- CNN
+- Facility Type
+- Location description
+- Permit
+- Status
 
-## Contributing
+### Taxonomy Term: Facility Type
+A taxonomy term called "Facility Type" is used to categorize the type of facilities. This helps in organizing and filtering the vendors based on the type of facility they operate.
 
-Contributions are welcome in the form of GitHub pull requests. However, the
-`pantheon-upstreams/drupal-composer-managed` repository is a mirror that does not
-directly accept pull requests.
+### View with Filters
+A custom view is created to display the vendors. This view includes the following features:
+- Filters by Applicant: Allows users to filter the vendors based on the applicant's name.
+- Filters by Facility Type: Allows users to filter the vendors based on the facility type.
 
-Instead, to propose a change, please fork [pantheon-systems/drupal-composer-managed](https://github.com/pantheon-systems/drupal-composer-managed)
-and submit a PR to that repository.
+### Grid of Cards
+The view displays the vendors in a grid of cards. Each card corresponds to an applicant and contains the following information:
+- Vendor Name
+- Location
+- Type
+- Status
+
+Additionally, each card includes a "See More" link that directs the user to a detailed page with more information about the applicant.
+
+## Demo
+http://foodtrucknavigator.docksal.site
